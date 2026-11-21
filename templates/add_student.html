@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Student</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <span class="navbar-title">Student Management System</span>
+        <div class="navbar-links">
+            <a href="/">Home</a>
+            <a href="/add-student">Add Student</a>
+            <a href="/students">View Students</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="form-card">
+
+            <h2 class="form-title">Add New Student</h2>
+
+            <!--
+                MESSAGE_PLACEHOLDER
+                This line is replaced by Python with a success or error message.
+                See the save_student() function in main.py.
+            -->
+            MESSAGE_PLACEHOLDER
+
+            <!-- Student Registration Form -->
+            <form action="/add-student" method="post">
+
+                <div class="form-group">
+                    <label for="name">Student Name</label>
+                    <input type="text" id="name" name="name"
+                           placeholder="Enter full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="register_number">Register Number</label>
+                    <input type="text" id="register_number" name="register_number"
+                           placeholder="e.g. 2024CS001" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="department">Department</label>
+                    <input type="text" id="department" name="department"
+                           placeholder="e.g. Computer Science" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email"
+                           placeholder="e.g. student@example.com" required>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-blue">Save Student</button>
+                    <a href="/" class="btn btn-grey">Cancel</a>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
