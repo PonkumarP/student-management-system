@@ -2,41 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All Students</title>
     <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
 
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <span class="navbar-title">Student Management System</span>
-        <div class="navbar-links">
-            <a href="/">Home</a>
-            <a href="/add-student">Add Student</a>
-            <a href="/students">View Students</a>
-        </div>
-    </nav>
-
-    <!-- Main Content -->
-    <div class="container">
-        <div class="table-card">
-
-            <div class="table-header">
-                <h2 class="form-title">All Students</h2>
-                <a href="/add-student" class="btn btn-blue">+ Add Student</a>
-            </div>
-
-            <!--
-                STUDENT_TABLE_PLACEHOLDER
-                This line is replaced by Python with the full <table> HTML
-                or an empty-state message.
-                See the view_students() function in main.py.
-            -->
-            STUDENT_TABLE_PLACEHOLDER
-
-        </div>
+<nav class="navbar">
+    <span class="navbar-title">Student Management System</span>
+    <div class="navbar-links">
+        <a href="/">Home</a>
+        <a href="/add-student">Add Student</a>
+        <a href="/students">View Students</a>
     </div>
+</nav>
+
+<div class="container">
+    <div class="table-card">
+        <div class="table-header">
+            <h2 class="form-title">All Students</h2>
+            <a href="/add-student" class="btn btn-blue">+ Add Student</a>
+        </div>
+
+        STUDENT_TABLE_PLACEHOLDER
+    </div>
+</div>
 
 </body>
 </html>
